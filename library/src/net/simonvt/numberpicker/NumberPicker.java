@@ -16,6 +16,7 @@
 
 package net.simonvt.numberpicker;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -24,6 +25,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -567,6 +569,7 @@ public class NumberPicker extends LinearLayout {
      * @param attrs a collection of attributes.
      * @param defStyle The default style to apply to this view.
      */
+    @SuppressLint("NewApi")
     public NumberPicker(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs);
 

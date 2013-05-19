@@ -2658,4 +2658,9 @@ public class NumberPicker extends LinearLayout {
     static private String formatNumberWithLocale(int value) {
         return String.format(Locale.getDefault(), "%d", value);
     }
+	
+	public void setTypeface(Typeface typeface) {
+    	mInputText.setTypeface(typeface);
+    	mSelectorWheelPaint.setTypeface(typeface);
+    }
 }
